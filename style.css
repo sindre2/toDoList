@@ -1,0 +1,111 @@
+body
+{
+    background-image: url("./image/machoman.jpg");
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    font-family: 'Rubik Distressed', sans-serif;
+}
+
+button
+{
+    background-color: goldenrod;
+}
+
+button:hover
+{
+    cursor: pointer;
+}
+
+h1
+{
+    color: white;
+    text-shadow: 1px 2px black;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+p
+{
+    font-size: 1.5rem;
+}
+
+form
+{
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.edit-toDo-List
+{
+    width: 90%;
+    height: 300px;
+
+    border: 3px goldenrod dotted;
+    /* background-color: rgba(127, 255, 0, 0.5); */
+
+    margin-top: 2rem;
+    overflow: scroll;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url("./image/retroFrame.jpg");
+    object-fit: cover;
+}
+
+.completed
+{
+    animation: explosion 0.5s;
+}
+
+@keyframes explosion
+{
+    100% {rotate: 1080deg};
+}
+
+.cancelled
+{
+    animation: angry 0.7s infinite;
+}
+
+@keyframes angry
+{
+    0% {rotate: 5deg;}
+    5% {rotate: -5deg;}
+    10% {rotate: 5deg;}
+    15% {rotate: -5deg;}
+    20% {rotate: 5deg;}
+    25% {rotate: -5deg;}
+    30% {rotate: 5deg;}
+    35% {rotate: -5deg;}
+    40% {rotate: 5deg;}
+    45% {rotate: -5deg;}
+    50% {rotate: 5deg;}
+    55% {rotate: -5deg;}
+    60% {rotate: 5deg;}
+    65% {rotate: -5deg;}
+    70% {rotate: 5deg;}
+    75% {rotate: -5deg;}
+    80% {rotate: 5deg;}
+    85% {rotate: -5deg;}
+    90% {rotate: 5deg;}
+    95% {rotate: -5deg;}
+    100% {rotate: 5deg;}
+}
+
+.toDoPledge
+{
+    text-align: center;
+    margin: 2px 0;
+    text-shadow: 1px 2px greenyellow;
+}
