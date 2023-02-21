@@ -63,9 +63,9 @@ soundsSwore.forEach((data, index) =>
 });
 
 
-// btnToDo.addEventListener("click", (data) => 
-// {
-//     data.preventDefault();
-//     addToDo();
-// });
+btnToDo.addEventListener("click", (data) => 
+{
+    data.preventDefault();
+    addToDo();
+});
 
