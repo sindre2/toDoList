@@ -7,13 +7,14 @@ body
     width: 100vw;
     height: 100vh;
     font-family: 'Rubik Distressed', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 button
 {
     background-color: goldenrod;
 }
-
 button:hover
 {
     cursor: pointer;
@@ -64,6 +65,56 @@ form
     object-fit: cover;
 }
 
+.toDoPledge
+{
+    text-align: center;
+    margin: 2px 0;
+    text-shadow: 1px 2px greenyellow;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-size: 1200px;
+    }    
+}
+@media screen and (max-width: 755px) {
+    body {
+        background-size: 900px;
+    }    
+}
+@media screen and (max-width: 560px) {
+    body {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #181b1d;
+    }    
+}
+
+@media screen and (max-width: 650px) {
+    form {
+        width: 75%;
+    }    
+}
+
+@media screen and (max-width: 590px) {
+    body {
+        padding: 2rem 0 4rem;
+    }
+}
+
+@media screen and (max-height: 490px) {
+    body {
+        overflow-y: scroll;
+        padding: 8rem 0 2rem;
+    }
+    form {
+        /* overflow-y: scroll; */
+        /* height: 75%; */
+        padding: 2rem 0 4rem;
+    }
+    
+}
+
 .completed
 {
     animation: explosion 0.5s;
@@ -102,35 +153,4 @@ form
     90% {rotate: 5deg;}
     95% {rotate: -5deg;}
     100% {rotate: 5deg;}
-}
-
-.toDoPledge
-{
-    text-align: center;
-    margin: 2px 0;
-    text-shadow: 1px 2px greenyellow;
-}
-
-@media screen and (max-width: 650px) {
-    form {
-        width: 75%;
-    }    
-}
-
-@media screen and (max-width: 590px) {
-    body {
-        padding: 2rem 0 4rem;
-    }
-}
-
-@media screen and (max-height: 490px) {
-    body {
-        overflow-y: scroll;
-    }
-    form {
-        /* overflow-y: scroll; */
-        /* height: 75%; */
-        padding: 2rem 0 4rem;
-    }
-    
 }
